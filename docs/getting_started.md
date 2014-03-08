@@ -71,7 +71,7 @@ afterwards. Use your text editor to add the code to the `recipe.rb` file.
 
 <pre class="code">
 class Tmux < FPM::Cookery::Recipe
-  description 'termnial multiplexer'
+  description 'terminal multiplexer'
 
   name     'tmux'
   version  '1.9a'
@@ -184,5 +184,5 @@ $ dpkg -I pkg/tmux_1.9a-1_amd64.deb
  Section: optional
  Priority: extra
  Homepage: http://tmux.sourceforce.net/
- Description: termnial multiplexer
+ Description: terminal multiplexer
 </pre>
