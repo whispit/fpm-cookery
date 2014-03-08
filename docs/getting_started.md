@@ -154,3 +154,35 @@ make[1]: Leaving directory `/home/vagrant/recipes/tmux/tmp-build/tmux-1.9a'
 `-- tmp-dest
     `-- usr
 </pre>
+
+<pre>
+$ dpkg -c pkg/tmux_1.9a-1_amd64.deb
+drwxrwxr-x 0/0               0 2014-03-08 01:26 ./
+drwxrwxr-x 0/0               0 2014-03-08 01:26 ./usr/
+drwxrwxr-x 0/0               0 2014-03-08 01:26 ./usr/share/
+drwxrwxr-x 0/0               0 2014-03-08 01:26 ./usr/share/man/
+drwxrwxr-x 0/0               0 2014-03-08 01:26 ./usr/share/man/man1/
+-rw-r--r-- 0/0           93888 2014-03-08 01:26 ./usr/share/man/man1/tmux.1
+drwxrwxr-x 0/0               0 2014-03-08 01:26 ./usr/bin/
+-rwxr-xr-x 0/0          491016 2014-03-08 01:26 ./usr/bin/tmux
+</pre>
+
+<pre>
+$ dpkg -I pkg/tmux_1.9a-1_amd64.deb
+ new debian package, version 2.0.
+ size 235488 bytes: control archive= 437 bytes.
+     260 bytes,    12 lines      control
+     105 bytes,     2 lines      md5sums
+ Package: tmux
+ Version: 1.9a-1
+ License: unknown
+ Vendor:
+ Architecture: amd64
+ Maintainer: <vagrant@ubuntu1204>
+ Installed-Size: 571
+ Depends: libevent-2.0-5
+ Section: optional
+ Priority: extra
+ Homepage: http://tmux.sourceforce.net/
+ Description: termnial multiplexer
+</pre>
