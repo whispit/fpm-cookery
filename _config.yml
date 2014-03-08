@@ -1,7 +1,7 @@
 source:      .
 destination: ./_site
 plugins:     ./_plugins
-exclude: [bin, CNAME, Gemfile, Gemfile.lock, README.md]
+exclude: [bin, CNAME, Gemfile, Gemfile.lock, README.md, Vagrantfile]
 permalink: /news/:year/:month/:day/:title.html
 baseurl: '/fpm-cookery'
 pygments: true
