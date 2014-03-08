@@ -3,7 +3,7 @@ title: "fpm-cookery: all documentation guides"
 layout: documentation
 ---
 
-###  [Getting started](/articles/getting_started.html)
+###  [Getting started]({{ site.baseurl }}/docs/getting_started.html)
 
 An overview of fpm-cookery with a quick tutorial that helps you to get started
 with it. It should take about 10 minutes to read and study the provided code
