@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+  <head>
+    {% include header.html %}
+  </head>
+  <body data-spy="scroll" data-target="#side-navigation">
+
+    {% include navigation.html %}
+
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-3 bs-docs-sidebar' id='side-navigation'>
+          <div class="bs-sidebar hidden-print affix-top" role="complementary">
+            <ul id="toc" class="nav bs-sidenav"></ul>
+          </div>
+        </div>
+        <div class='col-md-9'>
+          {{ content }}
+
+          <h2>Tell Us What You Think!</h2>
+
+          <p>Let us know what was unclear or what has not been covered. Maybe
+          you do not like the guide style or grammar or discover spelling
+          mistakes. Reader feedback is key to making the documentation better.</p>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
