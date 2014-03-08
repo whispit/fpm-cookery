@@ -13,7 +13,7 @@
           <div class="bs-sidebar hidden-print affix-top" role="complementary">
             <ul class="nav bs-sidenav">
             {% for post in site.posts limit:15 %}
-            <li><a href="{{ post.url }}"><strong>{{ post.date | date_to_string }} &raquo;</strong> {{ post.title }}</a></li>
+              <li><a href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.date | date_to_string }} &raquo;</strong> {{ post.title }}</a></li>
             {% endfor %}
             </ul>
           </div>
