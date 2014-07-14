@@ -17,7 +17,7 @@ module FPM
         end
 
         def package_input
-          fpm.input(recipe.name)
+          fpm.input(recipe.pypi_name && recipe.name)
         end
       end
     end
