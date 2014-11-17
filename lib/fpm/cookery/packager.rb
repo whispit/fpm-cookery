@@ -171,7 +171,13 @@ module FPM
           ensure
             input.cleanup if input
             output.cleanup if output
-            Log.info "Created package: #{File.join(Dir.pwd, output.to_s)}"
+
+            package_path = File.join(Dir.pwd, output.to_s)
+            if recipe.install_after_package
+              system("dpkg", "-i", package_path)
+            end
+
+            Log.info "Created package: #{package_path}"
           end
         end
       end
